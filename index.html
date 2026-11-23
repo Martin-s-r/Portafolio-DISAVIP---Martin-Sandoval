@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Martin Sandoval</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">M. Sandoval</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Sobre Mí</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=MartinSandoval&backgroundColor=b6e3f4" alt="Dibujo de Martin Sandoval" class="profile-img">
+                <h1>Hola, soy Martin Sandoval</h1>
+                <p class="subtitle">Estudiante de Diseño y Desarrollo de Software - 2do Ciclo</p>
+                <a href="#contactos" class="btn">Trabajemos Juntos</a>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="about">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <p>Soy <strong>Martin Sandoval</strong>, actualmente curso el segundo ciclo de la carrera de <strong>Diseño y Desarrollo de Software</strong>. Me apasiona aprender sobre nuevas tecnologías, crear páginas web interactivas y diseñar interfaces que ofrezcan una excelente experiencia de usuario. Siempre estoy buscando nuevos retos para mejorar mis habilidades como futuro desarrollador.</p>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria">
+            <h2>Mi Galería de Proyectos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Proyecto de Código">
+                    <div class="card-info">
+                        <h3>Desarrollo Web</h3>
+                        <p>Prácticas de HTML, CSS y JS.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80" alt="Proyecto de Diseño">
+                    <div class="card-info">
+                        <h3>Diseño de Interfaces</h3>
+                        <p>Creación de Landing Pages.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Proyecto de Software">
+                    <div class="card-info">
+                        <h3>Lógica de Programación</h3>
+                        <p>Algoritmos en mi 2do ciclo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section id="testimonios" class="testimonials-section">
+            <h2>Testimonios</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="quote-icon">❝</div>
+                    <p>"Un trabajo excelente, muy profesional y entregado a tiempo. 100% recomendado."</p>
+                    <div class="client-info">
+                        <img src="https://api.dicebear.com/7.x/initials/svg?seed=JG&backgroundColor=4F46E5" alt="Juan Gustavo">
+                        <h4>Juan Gustavo Ortiz Quispe</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTOS -->
+        <section id="contactos" class="contact-section">
+            <h2>Ponte en Contacto</h2>
+            <div class="contact-wrapper">
+                <form id="contactForm" action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="correo" name="correo" placeholder="Tu Correo" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué te puedo ayudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block">Enviar Mensaje</button>
+                    <div id="formStatus"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Martin Sandoval - Estudiante de Diseño y Desarrollo de Software.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
